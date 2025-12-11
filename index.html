@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Interface do usuário do gerenciador de extensões do navegador</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="img-logo" src="/assets/Gemini_Generated_Image_1lrbyj1lrbyj1lrb.png" alt="">
+        <button class="sol" id="tema"><img src="/assets/icon-sun.svg" alt="sol"></button>
+    </header>
+
+    <div class="extesions">
+        <h1>Extensions List</h1>
+
+        <div class="caixinhas" id="caixa">
+            <button class="filter-btn" id="filter-all">All</button>
+            <button class="filter-btn" id="filter-active">Active</button>
+            <button class="filter-btn" id="filter-inactive">Inctive</button>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="container-one">
+
+            <!-- DevLens-->
+            <div class="dev-lens extension-card" data-is-active="false" data-id="dev-lens">
+
+                <div class="filter">
+                    <img src="/assets/logo-devlens.svg" alt="">
+                    <h1>DevLens</h1>
+                </div>
+
+                <p class="paragrafo">Quickly inspect page layouts and visualize elements boundaries.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="dev-lens">
+                            <span class="slider" checked=""></span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- StyleSpy -->
+            <div class="style-spy extension-card" data-is-active="false" data-id="style-spy">
+
+                <div class="filter">
+                    <img class="logo-styles" src="/assets/logo-style-spy.svg" alt="">
+                    <h1 class="sty">StyleSpy</h1>
+                </div>
+
+                <p class="paragrafo2">Istantly analyze and copy CSS from any webpage element.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="style-spy">
+                            <span class="slider" checked=""></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SeedBoost -->
+            <div class="speed-boost extension-card" data-is-active="false" data-id="speed-boost">
+
+                <div class="filterr">
+                    <img src="/assets/logo-speed-boost.svg" alt="">
+                    <h1 class="speed">SeedBoost</h1>
+                </div>
+
+                <p class="paragrafo2">Optimize browser resource usage to accelerate page loading.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="speed-boost">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-two">
+
+            <!-- JSONWizard -->
+            <div class="jsonwizard extension-card" data-is-active="false" data-id="jsonwizard">
+
+                <div class="filterr">
+                    <img src="/assets/logo-json-wizard.svg" alt="">
+                    <h1 class="json">JSONWizard</h1>
+                </div>
+
+                <p class="paragrafo2">Formats, validates, and prettifies JSON responses in-browser.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="jsonwizard">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TaMaster-Pro -->
+            <div class="taMaster-pro extension-card" data-is-active="false" data-id="taMaster-pro">
+
+                <div class="filterr">
+                    <img src="/assets/logo-tab-master-pro.svg" alt="">
+                    <h1 class="master">TaMaster-Pro</h1>
+                </div>
+
+                <p class="paragrafo2">Organizes browser tabs into groups and sessions.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="taMaster-pro">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ViewportBuddy -->
+            <div class="viewport-buddy extension-card" data-is-active="false" data-id="viewport-buddy">
+
+                <div class="filterr">
+                    <img src="/assets/logo-viewport-buddy.svg" alt="">
+                    <h1 class="view">ViewportBuddy</h1>
+                </div>
+
+                <p class="paragrafo2">Simulates various screen resolutions directly within the browser.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="viewport-buddy">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-thri">
+
+            <!-- Markup Notes -->
+            <div class="markup-notes extension-card" data-is-active="false" data-id="markup-notes">
+
+                <div class="filterr">
+                    <img src="/assets/logo-markup-notes.svg" alt="">
+                    <h1 class="markup">Markup Notes</h1>
+                </div>
+
+                <p class="paragrafo2">Enables annotation and notes directly onto webpages for collaborative
+                    debugging.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="markup-notes">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- GridGuides -->
+            <div class="grid-guides extension-card" data-is-active="false" data-id="grid-guides">
+
+                <div class="filterr">
+                    <img src="/assets/logo-grid-guides.svg" alt="">
+                    <h1 class="grid">GridGuides</h1>
+                </div>
+
+                <p class="paragrafo2">Overlay customizable grids and alignment guides on any webpage.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="grid-guides">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Palette Picker -->
+            <div class="palette-picker extension-card" data-is-active="false" data-id="palette-picker">
+
+                <div class="filterr">
+                    <img src="/assets/logo-palette-picker.svg" alt="">
+                    <h1 class="palette">Palette Picker</h1>
+                </div>
+
+                <p class="paragrafo2">Instantly extracts color palettes from any webpage.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="palette-picker">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-for">
+
+            <!-- Link Checker-->
+            <div class="link-checker extension-card" data-is-active="false" data-id="link-checker">
+
+                <div class="filterr">
+                    <img src="/assets/logo-link-checker.svg" alt="">
+                    <h1 class="link">Link Checker</h1>
+                </div>
+
+                <p class="paragrafo2">Scans and highlights broken links on any page.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="link-checker">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- DOM-Snapshot -->
+            <div class="dom-snapshot extension-card" data-is-active="false" data-id="dom-snapshot">
+
+                <div class="filterr">
+                    <img src="/assets/logo-dom-snapshot.svg" alt="">
+                    <h1 class="dom">DOM-Snapshot</h1>
+                </div>
+
+                <p class="paragrafo2">Capture and export DOM structures quickly.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="dom-snapshot">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Console Plus -->
+            <div class="console-plus extension-card" data-is-active="false" data-id="console-plus">
+
+                <div class="filterr">
+                    <img src="/assets/logo-console-plus.svg" alt="">
+                    <h1 class="console">ConsolePlus</h1>
+                </div>
+
+                <p class="paragrafo2">Enhanced developer console with advanced filtering and logging.</p>
+
+                <div class="botton-row">
+                    <button class="remove">Remove</button>
+
+                    <div class="botton">
+                        <label class="switch">
+                            <input class="toggle-switch" type="checkbox" data-extension-id="console-plus">
+                            <span class="slider" checked></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="custom-alert" style="display: none;">
+        <div class="alert-content">
+            <h3>Ação Concluída</h3>
+            <p id="alert-message">Mensagem padrão.</p>
+            <button onclick="closeCustomAlert()">OK</button>
+        </div>
+    </div>
+
+</body>
+<script src="/scripts.js"></script>
+
+</html>

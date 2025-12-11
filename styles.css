@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    margin-left: 6%;
+    padding: 1%;
+    background: linear-gradient(to top, #0d1252, rgb(0, 0, 0));
+}
+
+body.white-mode {
+    background: rgb(145, 141, 146);
+    color: black;
+}
+
+body.white-mode .header {
+    background-color: #0e1550;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.white-mode .extesions h1 {
+    color: #000000;
+}
+
+body.white-mode .header .sol {
+    background-color: #000000;
+}
+
+body.white-mode .extesions .caixinhas button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #690659;
+}
+
+body.white-mode .extesions .caixinhas button.active {
+    background-color: #f70000;
+    color: white;
+}
+
+body.white-mode .extension-card {
+    border: 1px solid #811873;
+    background-color: #000000;
+}
+
+body.white-mode .extension-card h1,
+body.white-mode .spy,
+body.white-mode .speed,
+body.white-mode .json,
+body.white-mode .master,
+body.white-mode .view,
+body.white-mode .markup,
+body.white-mode .grid,
+body.white-mode .palette,
+body.white-mode .link,
+body.white-mode .dom,
+body.white-mode .console {
+    color: #ffffff;
+}
+
+body.white-mode .paragrafo,
+body.white-mode .paragrafo2 {
+    color: #ffffff;
+}
+
+body.white-mode .remove {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+body.white-mode .remove:hover {
+    background-color: #e00808;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.header {
+    margin-bottom: 65px;
+    padding: 15px;
+    background-color: rgb(29, 29, 77);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+.header .img-logo {
+    width: 15%;
+}
+
+.header .sol {
+    width: 45px;
+    height: 40px;
+    align-items: center;
+    border: none;
+    border-radius: 25%;
+    outline: none;
+    background-color: rgb(56, 56, 82);
+    cursor: pointer;
+}
+
+.extesions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+}
+
+.extesions h1 {
+    color: white;
+}
+
+.extesions .caixinhas {
+    display: flex;
+    gap: 20px;
+}
+
+.extesions .caixinhas button {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(56, 56, 82);
+    color: #fff;
+}
+
+.extesions .caixinhas button:hover {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(250, 3, 3);
+    color: #fff;
+    transition: 0.9s;
+}
+
+.extesions .caixinhas button.active {
+    background-color: #f70000;
+}
+
+.container {
+    margin-top: 35px;
+}
+
+.container-one,
+.container-two,
+.container-thri,
+.container-for {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-one {
+    margin-top: 0;
+}
+
+.dev-lens,
+.style-spy,
+.speed-boost,
+.jsonwizard,
+.taMaster-pro,
+.viewport-buddy,
+.markup-notes,
+.grid-guides,
+.palette-picker,
+.link-checker,
+.dom-snapshot,
+.console-plus {
+    padding: 20px;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: rgb(29, 29, 77);
+}
+
+.container-one .dev-lens .filter,
+.filterr {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    width: 100%;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    padding: 0;
+}
+
+.container-one .dev-lens .filter h1 {
+    margin-top: 0;
+}
+
+.container-one .style-spy .filter .sty {
+    margin-left: 70px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.paragrafo,
+.paragrafo2 {
+    margin-left: 0;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+.speed,
+.json,
+.master,
+.view,
+.markup,
+.grid,
+.palette,
+.link,
+.dom,
+.console {
+    margin: 0;
+    display: inline-flex;
+    align-self: center;
+    text-align: left;
+    flex-shrink: 1;
+    white-space: nowrap;
+    max-width: 80%;
+    color: rgb(255, 255, 255);
+}
+
+.remove {
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(7, 7, 75);
+    color: #fff;
+    border: 1px solid white;
+}
+
+.remove:hover {
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #e65c5c;
+    color: #fff;
+    border: 1px solid white;
+    transition: 0.9s;
+}
+
+.botton-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botton-row .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: auto;
+}
+
+.botton-row .switch input {
+    display: none;
+}
+
+.botton-row .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #696969;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.botton-row .slider:before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2.5px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.botton-row .switch input:checked+.slider {
+    background-color: #e65c5c;
+}
+
+.botton-row .switch input:checked+.slider:before {
+    transform: translateX(25px);
+}
+
+#custom-alert {
+    position: fixed;
+    top: -30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 44, 44, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.alert-content {
+    background-color: #460340;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .header {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .header .img-logo {
+        width: 40%;
+    }
+
+    .extesions {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .extesions h1 {
+        font-size: 1.5rem;
+    }
+
+    .extesions .caixinhas {
+        gap: 10px;
+        width: 80%;
+    }
+
+    .extesions .caixinhas button {
+        font-size: 16px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .container-one,
+    .container-two,
+    .container-thri,
+    .container-for {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container-one>div,
+    .container-two>div,
+    .container-thri>div,
+    .container-for>div,
+
+    .dev-lens,
+    .speed-boost,
+    .jsonwizard,
+    .taMaster-pro,
+    .viewport-buddy,
+    .markup-notes,
+    .grid-guides,
+    .palette-picker,
+    .link-checker,
+    .dom-snapshot,
+    .console-plus {
+        width: 100% !important;
+    }
+
+    .container-one .dev-lens .filter,
+    .filterr {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .container-one .dev-lens .filter h1,
+    .speed,
+    .json,
+    .master,
+    .view,
+    .markup,
+    .grid,
+    .palette,
+    .link,
+    .dom,
+    .console {
+        margin: 0;
+        display: inline;
+        text-align: left;
+    }
+
+    .paragrafo,
+    .paragrafo2 {
+        margin-left: 0;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+
+    .dev-lens,
+    .style-spy,
+    .speed-boost,
+    .jsonwizard,
+    .taMaster-pro,
+    .viewport-buddy,
+    .markup-notes,
+    .grid-guides,
+    .palette-picker,
+    .link-checker,
+    .dom-snapshot,
+    .console-plus {
+        padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+
+        .style-spy .filter,
+        .style-spy .filterr {
+            display: flex !important;
+            align-items: center !important;
+            gap: 17px;
+            margin-bottom: 15px;
+        }
+
+        .sty {
+            display: inline-flex !important;
+            margin: 0 !important;
+        }
+    }
+
+}
