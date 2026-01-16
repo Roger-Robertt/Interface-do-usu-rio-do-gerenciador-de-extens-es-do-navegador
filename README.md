@@ -8,7 +8,7 @@ e nisso vc vai tendo mais experiência em cada projeto.</p>
 <p>Nesse desafio, eu queria algo parecido ou ainda melhor, então eu pensava no jeito mais produtivo para deixar mais identico, ou algo mais melhor.
 Por isso, voce tem q ter conhecimentos sólidos no html e css e javascript.</p>
 
-<p>✅ Componentização: Criação de componentes reutilizáveis para os cards de extensões, garantindo código limpo e escalável.</p>
+<p>✅ Componentização: Criação de componentes reutilizáveis para os cards de extensões.</p>
 <p>✅ Interface Responsiva: Uso de CSS Moderno (Flexbox) para garantir que o dashboard se ajuste a diferentes resoluções.</p>
 <p>Manipulação de Estados: Implementação de lógica para alternar estados (Active/Inactive) e remoção de itens da lista.</p>
 <p>✅Dark Mode UI: Design planejado com uma paleta de cores moderna e alto contraste para melhor legibilidade.</p>
